@@ -1,0 +1,9 @@
+--- Makefile	2003-05-08 14:19:50.000000000 -0500
++++ Makefile.patched	2009-04-21 14:17:47.000000000 -0500
+@@ -1,5 +1,5 @@
+ CC=gcc
+-CFLAGS=-O3 -Wall
++CFLAGS=-O3 -Wall -g
+ LIBS=-lncurses
+ 
+ CFILES=globals.c view.c aliens.c ufo.c player.c nInvaders.c
