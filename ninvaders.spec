@@ -1,6 +1,6 @@
 Name:		ninvaders
 Version:	0.1.1
-Release:	%mkrel 2
+Release:	%mkrel 1
 Summary:	Space Invaders clone written in ncurses for cli gaming
 Group:		Games/Arcade
 License:	GPLv2+
@@ -11,10 +11,9 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:	ncurses-devel
 
 %description
-Ever wanted to play space invaders when you can't find a GUI? Now you can!
+Ever wanted to place space invaders when you can't find a GUI? Now you can!
 ninvaders is a ncurses based space invaders clone to play from the command
 line.
-
 
 %prep
 %setup -q
@@ -26,13 +25,20 @@ line.
 %install
 %__rm -rf %{buildroot}
 %__mkdir_p %{buildroot}%{_bindir}
-%__install -m0755 nInvaders %{buildroot}%{_bindir}/ninvaders
+%__install -c -m0755 nInvaders %{buildroot}%{_bindir}/ninvaders
 
 %clean
 %__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc ChangeLog README
+%doc ChangeLog README gpl.txt
 %{_bindir}/ninvaders
+
+
+
+%changelog
+* Fri Dec 23 2011 Andrey Bondrov <abondrov@mandriva.org> 0.1.1-1mdv2011.0
++ Revision: 744857
+- imported package ninvaders
 
