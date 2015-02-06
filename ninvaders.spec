@@ -1,6 +1,6 @@
 Name:		ninvaders
 Version:	0.1.1
-Release:	%mkrel 1
+Release:	2
 Summary:	Space Invaders clone written in ncurses for cli gaming
 Group:		Games/Arcade
 License:	GPLv2+
