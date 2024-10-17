@@ -4,7 +4,7 @@ Release:	2
 Summary:	Space Invaders clone written in ncurses for cli gaming
 Group:		Games/Arcade
 License:	GPLv2+
-URL:		http://ninvaders.sourceforge.net/
+URL:		https://ninvaders.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		ninvaders-0.1.1-add-debuginfo.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
