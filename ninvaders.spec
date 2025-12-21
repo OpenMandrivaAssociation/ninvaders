@@ -8,6 +8,7 @@ URL:		https://ninvaders.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		ninvaders-0.1.1-add-debuginfo.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	make
 BuildRequires:	ncurses-devel
 
 %description
